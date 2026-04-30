@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restometrik Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40x40/0052cc/ffffff?text=R" alt="Logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active"><i class="fa-solid fa-table-cells-large"></i> Dashboard</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-chart-line"></i> Analizler</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-file-lines"></i> Raporlar</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> Ayarlar</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-microchip"></i> Karar Motoru</a>
+            </nav>
+            <div class="sidebar-footer">
+                <p><strong>Restometrik</strong></p>
+                <span>Analiz</span>
+                <span>Analizler</span>
+                <span>Restometrik</span>
+                <span>Ayarlar</span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Hızlı ara...">
+                </div>
+                <div class="header-actions">
+                    <select class="select-box">
+                        <option>İl Seçiniz</option>
+                    </select>
+                    <select class="select-box">
+                        <option>İlçe Seçiniz</option>
+                    </select>
+                    <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Sorgula</button>
+                    <button class="btn btn-outline">İşletme Başvurusu</button>
+                    <button class="btn btn-orange">Restometrik Card</button>
+                </div>
+            </header>
+
+            <section class="banner-grid">
+                <div class="banner partner-banner">
+                    <div class="banner-text">
+                        <h3>Haftanın Partneri: <br> <strong>Celo Kebap</strong></h3>
+                        <p>Sektörün En İyi Yorum Alanı!</p>
+                        <button class="btn-sm">Hemen İncele</button>
+                    </div>
+                    <img src="https://via.placeholder.com/150x100?text=Kebap" alt="Kebap">
+                </div>
+                <div class="banner rising-banner">
+                    <div class="banner-text">
+                        <h3>Haftanın Yükselen Değeri: <br> <strong>Burger X Club</strong></h3>
+                        <p>Hızlı Büyüyen Şehir Markası!</p>
+                        <button class="btn-sm">Hemen İncele</button>
+                    </div>
+                    <img src="https://via.placeholder.com/150x100?text=Burger" alt="Burger">
+                </div>
+            </section>
+
+            <div class="dashboard-grid">
+                
+                <section class="card">
+                    <div class="card-header">Restoran Karşılaştırma</div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Restoran</th>
+                                <th>Google Puanı</th>
+                                <th>Platform</th>
+                                <th>Yemeksepeti</th>
+                                <th>Getir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://via.placeholder.com/20" class="mini-logo"> Celo Kebap</td>
+                                <td><i class="fa-brands fa-google color-g"></i> 4.8</td>
+                                <td class="text-logo">Logo</td>
+                                <td>4.8</td>
+                                <td><span class="badge-g">9</span> 4.8</td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://via.placeholder.com/20" class="mini-logo"> Burger X</td>
+                                <td><i class="fa-brands fa-google color-g"></i> 4.8</td>
+                                <td class="text-logo">Logo</td>
+                                <td>4.6</td>
+                                <td><span class="badge-g">9</span> 4.7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="card">
+                    <div class="card-header">Anasayfa Özeti</div>
+                    <div class="summary-content">
+                        <div class="metrics">
+                            <div class="metric-item">Lokasyon Potansiyeli <span class="green">92%</span></div>
+                            <div class="metric-item">Rakip Analizi <span class="green">85%</span></div>
+                            <div class="metric-item">Kârlılık Tahmini <span class="green">80%</span></div>
+                            <div class="metric-item">Yapay Zeka Görüşü <span class="trend-up">Yükseliş Trendi</span></div>
+                        </div>
+                        <div class="gauge-container">
+                            <div class="gauge-title">Yatırım Kararı</div>
+                            <div class="gauge-value">88/100</div>
+                            <div class="gauge-label">Restoran A</div>
+                        </div>
+                        <div class="actions">
+                            <div class="action-item"><span class="dot green"></span> Kapasite Artışı <span class="green">+20%</span></div>
+                            <div class="action-item"><span class="dot orange"></span> Yeni Ürün Testi: Lahmacun</div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
